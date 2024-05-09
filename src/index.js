@@ -1,8 +1,8 @@
 const MenuBtn = document.getElementById("menu-btn");
 const Menu = document.getElementById("menu");
 MenuBtn.addEventListener("click", () => {
-  console.log("Hello WOlrl");
   document.getElementById("menu").classList.toggle("translate-x-full");
+   document.querySelector('#svg-menu').classList.toggle('invert')
 });
 
 // JavaScript

@@ -22,7 +22,7 @@
   </head>
 
   <body class="h-screen w-screen overflow-x-hidden scroll-smooth">
-    <div class="absolute w-full">
+    <div class="absolute w-full top-0">
       <div
         id="menu"
         class="bg-[var(--color-brand-2)] h-fit absolute w-full p-3 transform duration-150 translate-x-full z-10 flex flex-col"
@@ -40,13 +40,13 @@
           أحصل على ملكية
         </button>
       </div>
-      <button class="w-[50px] absolute left-[85%] md:hidden z-10" id="menu-btn">
-        <img src="./src/imgs/burger-menu-svgrepo-com.svg" id="" alt="" />
-      </button>
     </div>
     <header
-      class="text-[var(--color-brand-2)] flex flex-col items-center relative"
+    class="text-[var(--color-brand-2)] flex flex-col items-center relative"
     >
+    <button class="w-[50px] absolute   left-[85%] md:hidden z-10" id="menu-btn">
+      <img  class="invert"  src="./src/imgs/burger-menu-svgrepo-com.svg" id="svg-menu" alt="" />
+    </button>
       <div class="absolute -z-20 h-full w-full">
         <div class="absolute w-full h-full" id="filter"></div>
         <img
