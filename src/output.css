@@ -794,6 +794,10 @@ video {
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1082,11 +1086,6 @@ video {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 
   .md\:text-\[24px\] {
