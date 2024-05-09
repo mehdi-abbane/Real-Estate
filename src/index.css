@@ -1,0 +1,142 @@
+:root {
+  --color-brand-1: #05c18e;
+  --color-brand-2: #ffffff;
+  --color-brand-3: #2a367a;
+  --color-brand-4: #050b2b;
+  --color-brnad-5: #f4fbf9;
+  --color-brand-6: #6b7280;
+}
+
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  
+  /* outline: 1px dotted red; */
+}
+header {
+  background-position: center;
+  background-blend-mode: lighten;
+  
+}
+
+html {
+
+  overflow-x: hidden;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  width: 100vw;
+}
+
+.spec-card:hover {
+  background-color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0px 4px 29.5px 0px #00000012;
+  transition: all 150ms;
+}
+.spec-card > button:hover {
+  color: #ffffff;
+  border-color: var(--color-brand-1);
+  background-color: var(--color-brand-1);
+}
+
+.iconGroup {
+  border-top: 1px solid var(--color-brand-6);
+}
+@media (min-width: 320px) and (max-width: 639px) {
+  .rating {
+    margin-top: 38%;
+  }
+}
+#bigVideo {
+  background-image: url("./imgs/2bg.jpeg");
+}
+
+#filter {
+  background: linear-gradient(0deg, #d9d9d91c, #d9d9d91c),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+:root {
+  --cord: #e5e7eba8;
+}
+.person {
+  border-radius: 110.5px 110.5px 110.5px 0px;
+}
+footer {
+  font-family: "Tajawal", sans-serif;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+.navItem::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: var(--color-brand-1);
+  left: 0;
+  top: 100%;
+  transition: width 150ms;
+}
+
+.spBtn {
+  transition: all 150ms linear;
+  border: 2px solid var(--color-brand-1);
+}
+.spBtn:hover {
+  background-color: transparent;
+  border-color: var(--color-brand-1);
+  /* color: var(--color-brand-1); */
+}
+
+
+
+/* fonts */
+.tajawal-extralight {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tajawal-light {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.filterBlur {
+  filter: blur(10px);
+}

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehdi | Real Estate</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./src/imgs/logo.svg" type="image/x-icon" />
+  </head>
+
+  <body class="h-screen w-screen overflow-x-hidden">
+    <div class="absolute w-full">
+      <div
+        id="menu"
+        class="bg-[var(--color-brand-2)] h-fit absolute w-full p-3 transform duration-150 translate-x-full z-10 flex flex-col"
+      >
+        <nav class="flex flex-col gap-8 font-bold mb-3 items-end">
+          <a href="">إتصل بنا</a>
+          <a href="">صفحات</a>
+          <a href="">خدمات</a>
+          <a href="">الملكية</a><a href="">معلومات عنا</a>
+          <a href="" class="text-[var(--color-brand-1)]">رئيسة</a>
+        </nav>
+        <button
+          class="bg-[var(--color-brand-1)] tajawal-bold text-white p-2 rounded-md"
+        >
+          أحصل على ملكية
+        </button>
+      </div>
+      <button class="w-[50px] absolute left-[85%] md:hidden z-10" id="menu-btn">
+        <img src="./src/imgs/burger-menu-svgrepo-com.svg" id="" alt="" />
+      </button>
+    </div>
+    <header
+      class="text-[var(--color-brand-2)] flex flex-col items-center relative"
+    >
+      <div class="absolute -z-20 h-full w-full">
+        <div class="absolute w-full h-full" id="filter"></div>
+        <img
+          src="./src/imgs/lazy-headerBg.jpg"
+          data-high="./src/imgs/headerBg.jpeg"
+          alt=""
+          class="w-full h-full object-cover filterBlur"
+        />
+      </div>
+      <div
+        class="flex p-4 items-center justify-between justify-between invisible md:visible gap-8"
+      >
+        <img src="./src/imgs/logo.svg" alt="Logo" />
+        <nav class="flex gap-8 font-bold">
+          <a class="navItem relative" href="">إتصل بنا</a>
+          <a class="navItem relative" href="">صفحات</a>
+          <a class="navItem relative" href="">خدمات</a>
+          <a class="navItem relative" href="">الملكية</a>
+          <a class="navItem relative" href="">معلومات عنا</a>
+          <a
+            class="navItem relative"
+            href=""
+            class="text-[var(--color-brand-1)]"
+            >رئيسة</a
+          >
+        </nav>
+        <button
+          class="spBtn bg-[var(--color-brand-1)] font-bold rounded-md p-2 border-[var(--color-brand-1)]"
+        >
+          أحصل على ملكية
+        </button>
+      </div>
+      <div class="font-bold flex flex-col justify-center gap-8 md:p-32 p-5">
+        <h1 class="text-[30px] md:text-[64px] text-center tajawal-bold">
+          إبحث عن المكان المثالي <br />للعيش مع عائلتك
+        </h1>
+        <p class="text-[20px] md:text-[24px] text-center tajawal-bold">
+          لدينا أكثر من
+          <span class="text-[var(--color-brand-1)]">54000 شقة</span> و مكان و
+          قطعة أرض.
+        </p>
+        <button
+          class="spBtn bg-[var(--color-brand-1)] p-2 rounded-xl w-fit mx-auto"
+        >
+          تواصل معنا الأن
+        </button>
+      </div>
+    </header>
+    <section
+      class="z-10 w-full gap-4 flex p-3 flex-col items-center justify-center bg-[var(--color-brnad-5)]"
+    >
+      <div class="flex flex-col justify-center py-10 items-center tajawal-bold">
+        <p class="text-[var(--color-brand-1)]">ماذا نفعل</p>
+        <h2 class="text-[40px]">تخصصنا الرئيسي</h2>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 justify-center">
+        <div
+          class="flex items-center flex-col gap-4 border-2 border-[#D1D5DB] text-center rounded-md spec-card p-3"
+        >
+          <img src="./src/imgs/zoom.svg" alt="" class="w-[72px]" />
+          <p class="text-xl tajawal-bold">بيع منزل</p>
+          <p class="text-[#6B7280] text-lg text-[20px] px-10 tajawal-regular">
+            هذا النص هو مثال لنص يمكن أن يستبدل في <br />
+            نفس المساحة، لقد تم توليد
+          </p>
+          <button
+            class="border-2 border-[var(--color-brand-1)] tajawal-bold transform duration-150 bg-transparent rounded-3xl text-[var(--color-brand-6)] p-2"
+          >
+            التحقق من الملكية
+          </button>
+        </div>
+        <div
+          class="flex items-center flex-col gap-4 border-2 border-[#D1D5DB] text-center rounded-md spec-card p-3"
+        >
+          <img src="./src/imgs/hand.svg" alt="" class="w-[72px]" />
+          <p class="tajawal-bold text-xl">بيع منزل</p>
+          <p class="text-[#6B7280] text-lg text-[20px] px-10 tajawal-regular">
+            هذا النص هو مثال لنص يمكن أن يستبدل في <br />
+            نفس المساحة، لقد تم توليد
+          </p>
+          <button
+            class="border-2 border-[var(--color-brand-1)] tajawal-bold transform duration-150 bg-transparent rounded-3xl text-[var(--color-brand-6)] p-2"
+          >
+            التحقق من الملكية
+          </button>
+        </div>
+        <div
+          class="flex items-center flex-col gap-4 border-2 border-[#D1D5DB] text-center rounded-md spec-card p-3"
+        >
+          <img src="./src/imgs/hand.svg" alt="" class="w-[72px]" />
+          <p class="tajawal-bold text-xl">بيع منزل</p>
+          <p class="text-[#6B7280] text-lg text-[20px] px-10 tajawal-regular">
+            هذا النص هو مثال لنص يمكن أن يستبدل في <br />
+            نفس المساحة، لقد تم توليد
+          </p>
+          <button
+            class="border-2 border-[var(--color-brand-1)] tajawal-bold transform duration-150 bg-transparent rounded-3xl text-[var(--color-brand-6)] p-2"
+          >
+            التحقق من الملكية
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="z-10 flex flex-col lg:flex-row justify-evenly items-center">
+      <div class="text-right flex flex-col gap-8">
+        <div class="p-3">
+          <p class="font-bold text-[var(--color-brand-1)]">لنأخذ جولة</p>
+          <h4 class="text-[40px] tajawal-bold">
+            كيف يمكنك العثور على العقار <br />المناسب ؟
+          </h4>
+          <p class="text-[var(--color-brand-6)] tajawal-regular">
+            هناك العديد من التطبيقات المتاحة التي تسمح لك بتصفح<br />
+            العقارات المعروضة للبيع أو الإيجار في منطقتك، والتواصل<br />
+            مع أصحاب العقارات مباشرة
+          </p>
+        </div>
+        <div>
+          <div class="flex items-center">
+            <img src="./src/imgs/house.svg" alt="" />
+            <div>
+              <h2 class="text-[var(--color-brand-3)] tajawal-bold">
+                الإقامة المثالية
+              </h2>
+              <p class="text-[var(--color-brand-6)] tajawal-regular">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس<br />
+                المساحة، لقد تم توليد
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./src/imgs/shield.svg" alt="" />
+            <div>
+              <h2 class="text-[var(--color-brand-3)] tajawal-bold">
+                موثوق بها من قبل الآلاف
+              </h2>
+              <p class="text-[var(--color-brand-6)] tajawal-regular">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس <br />المساحة، لقد تم
+                توليد
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <img src="./src/imgs/location.svg" alt="" />
+            <div>
+              <h2 class="text-[var(--color-brand-3)] tajawal-bold">
+                إجمالي الدفع
+              </h2>
+              <p class="text-[var(--color-brand-6)] tajawal-regular">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس<br />
+                المساحة، لقد تم توليد
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bigImgDiv relative p-3">
+        <img src="./src/imgs/greenShape.svg" alt="" />
+      </div>
+    </section>
+    <section class="p-3 bg-[var(--color-brand-2)] z-10">
+      <div class="flex justify-between p-3">
+        <div class="flex flex-col tajawal-bold gap-4">
+          <p class="text-[var(--color-brand-1)] text-xl">عقاراتنا</p>
+          <p class="text-4xl">عقارات للإيجار</p>
+        </div>
+        <button
+          class="h-fit bg-[var(--color-brand-1)] p-2 rounded-3xl tajawal-bold text-[var(--color-brand-2)]"
+        >
+          مشاهدة المزيد
+        </button>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">
+        <div
+          class="relative border-[var(--color-brand-6)] flex flex-col lg:flex-row gap-8"
+        >
+          <div class="border-2 rounded-3xl relative">
+            <img
+              src="./src/imgs/lazy-house1.jpg"
+              alt=""
+              class="houseImg -z-10 rounded-t-3xl filterBlur"
+              data-high="./src/imgs/house1.jpeg"
+            />
+
+            <div class="m-3 flex flex-col gap-8">
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[var(--color-brand-3)] text-xl">
+                  بيت للإيجار في المدينة
+                </h1>
+                <p class="flex">
+                  <img src="./src/imgs/minilocation.svg" alt="" />
+                  مخطط درب الحرمين
+                </p>
+                <h2 class="font-bold text-[var(--color-brand-1)] text-2xl">
+                  1200<span>ري </span>
+                </h2>
+              </div>
+              <div class="flex justify-center gap-8 p-2 iconGroup">
+                <div class="flex gap-4">
+                  <img src="./src/imgs/room.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة نوم
+                    </p>
+                    <p class="font-bold text-[13px]">3 غرف</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <img src="./src/imgs/bath.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة حمام
+                    </p>
+                    <p class="font-bold text-[13px]">غرفتان</p>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="./src/imgs/space.svg" alt="" />
+                    <div>
+                      <p
+                        class="text-[9px] text-[var(--color-brand-6)] font-bold"
+                      >
+                        مربع
+                      </p>
+                      <p class="font-bold text-[13px]">1,880 قدم</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute top-0 left-0 transform w-full h-2/3 flex flex-col items-end p-5 bg-red-30"
+            >
+              <p
+                class="rounded-3xl bg-[var(--color-brand-2)] py-2 px-3 font-bold text-[var(--color-brand-1)] w-fit"
+              >
+                للبيع
+              </p>
+              <div
+                class="flex gap-1 sm:mt-[50%] lg:mt-[35%] 2xl:mt-[50%] rating"
+              >
+                <div class="flex gap-1">
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                </div>
+                <img
+                  src="./src/imgs/pfp.jpeg"
+                  alt=""
+                  class="w-[42px] h-[42px] rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="border-2 rounded-3xl relative">
+            <img
+              src="./src/imgs/lazy-house2.jpg"
+              alt=""
+              class="houseImg -z-10 rounded-t-3xl filterBlur"
+              data-high="./src/imgs/house2.jpeg"
+            />
+
+            <div class="m-3 flex flex-col gap-8">
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[var(--color-brand-3)] text-xl">
+                  بيت للإيجار في المدينة
+                </h1>
+                <p class="flex">
+                  <img src="./src/imgs/minilocation.svg" alt="" />
+                  مخطط درب الحرمين
+                </p>
+                <h2 class="font-bold text-[var(--color-brand-1)] text-2xl">
+                  1200<span>ري </span>
+                </h2>
+              </div>
+              <div class="flex justify-center gap-8 p-2 iconGroup">
+                <div class="flex gap-4">
+                  <img src="./src/imgs/room.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة نوم
+                    </p>
+                    <p class="font-bold text-[13px]">3 غرف</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <img src="./src/imgs/bath.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة حمام
+                    </p>
+                    <p class="font-bold text-[13px]">غرفتان</p>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="./src/imgs/space.svg" alt="" />
+                    <div>
+                      <p
+                        class="text-[9px] text-[var(--color-brand-6)] font-bold"
+                      >
+                        مربع
+                      </p>
+                      <p class="font-bold text-[13px]">1,880 قدم</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute top-0 left-0 transform w-full h-2/3 flex flex-col items-end p-5 bg-red-30"
+            >
+              <p
+                class="rounded-3xl bg-[var(--color-brand-2)] py-2 px-3 font-bold text-[var(--color-brand-1)] w-fit"
+              >
+                للبيع
+              </p>
+              <div
+                class="flex gap-1 sm:mt-[50%] lg:mt-[35%] 2xl:mt-[50%] rating"
+              >
+                <div class="flex gap-1">
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                </div>
+                <img
+                  src="./src/imgs/pfp.jpeg"
+                  alt=""
+                  class="w-[42px] h-[42px] rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="border-2 rounded-3xl relative">
+            <img
+              src="./src/imgs/lazy-house3.jpg"
+              alt=""
+              class="houseImg -z-10 rounded-t-3xl filterBlur"
+              data-high="./src/imgs/house3.jpeg"
+            />
+
+            <div class="m-3 flex flex-col gap-8">
+              <div class="flex flex-col gap-4">
+                <h1 class="font-bold text-[var(--color-brand-3)] text-xl">
+                  بيت للإيجار في المدينة
+                </h1>
+                <p class="flex">
+                  <img src="./src/imgs/minilocation.svg" alt="" />
+                  مخطط درب الحرمين
+                </p>
+                <h2 class="font-bold text-[var(--color-brand-1)] text-2xl">
+                  1200<span>ري </span>
+                </h2>
+              </div>
+              <div class="flex justify-center gap-8 p-2 iconGroup">
+                <div class="flex gap-4">
+                  <img src="./src/imgs/room.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة نوم
+                    </p>
+                    <p class="font-bold text-[13px]">3 غرف</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <img src="./src/imgs/bath.svg" alt="" />
+                  <div>
+                    <p class="text-[9px] text-[var(--color-brand-6)] font-bold">
+                      غرفة حمام
+                    </p>
+                    <p class="font-bold text-[13px]">غرفتان</p>
+                  </div>
+                  <div class="flex gap-4">
+                    <img src="./src/imgs/space.svg" alt="" />
+                    <div>
+                      <p
+                        class="text-[9px] text-[var(--color-brand-6)] font-bold"
+                      >
+                        مربع
+                      </p>
+                      <p class="font-bold text-[13px]">1,880 قدم</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute top-0 left-0 transform w-full h-2/3 flex flex-col items-end p-5 bg-red-30"
+            >
+              <p
+                class="rounded-3xl bg-[var(--color-brand-2)] py-2 px-3 font-bold text-[var(--color-brand-1)] w-fit"
+              >
+                للبيع
+              </p>
+              <div
+                class="flex gap-1 sm:mt-[50%] lg:mt-[35%] 2xl:mt-[50%] rating"
+              >
+                <div class="flex gap-1">
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                  <img src="./src/imgs/star.svg" alt="" />
+                </div>
+                <img
+                  src="./src/imgs/pfp.jpeg"
+                  alt=""
+                  class="w-[42px] h-[42px] rounded-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#F4FBF9] flex flex-col gap-8">
+      <div class="p-8">
+        <p class="font-bold text-[var(--color-brand-1)]">المناطق المجاورة</p>
+        <p class="font-bold text-3xl">إبحث عن المنطقة التي <br />تقطن فيها</p>
+      </div>
+      <div class="flex justify-center gap-8 p-3 flex-wrap">
+        <div
+          class="rounded-3xl overflow-hidden bg-[var(--color-brand-2)] w-fit"
+        >
+          <div class="relative w-[288px] h-[277px]">
+            <img
+              src="./src/imgs/lazy-makka.jpg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+              data-high="./src/imgs/makka.jpeg"
+            />
+          </div>
+          <div class="relative flex items-center justify-between w-full p-3">
+            <div>
+              <p class="font-bold text-md">منطقة مكة المكرمة</p>
+              <p class="text-[var(--color-brand-6)]">5 عقارات</p>
+            </div>
+            <img src="./src/imgs/ArrowLeft.svg" alt="" class="" />
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-[var(--color-brand-2)] w-fit"
+        >
+          <div class="relative w-[288px] h-[277px]">
+            <img
+              src="./src/imgs/lazy-riayd.jpg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+              data-high="./src/imgs/riyad.jpeg"
+            />
+          </div>
+          <div class="relative flex items-center justify-between w-full p-3">
+            <div>
+              <p class="font-bold text-md">منطقة الرياض</p>
+              <p class="text-[var(--color-brand-6)]">5 عقارات</p>
+            </div>
+            <img src="./src/imgs/ArrowLeft.svg" alt="" class="" />
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-[var(--color-brand-2)] w-fit"
+        >
+          <div class="relative w-[288px] h-[277px]">
+            <img
+              src="./src/imgs/lazy-sharqya.jpg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+              data-high="./src/imgs/sharqya.jpeg"
+            />
+          </div>
+          <div class="relative flex items-center justify-between w-full p-3">
+            <div>
+              <p class="font-bold text-md">منطقة الشرقية</p>
+              <p class="text-[var(--color-brand-6)]">5 عقارات</p>
+            </div>
+            <img src="./src/imgs/ArrowLeft.svg" alt="" class="" />
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-[var(--color-brand-2)] w-fit"
+        >
+          <div class="relative w-[288px] h-[277px]">
+            <img
+              src="./src/imgs/lazy-jazzan.jpg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+              data-high="./src/imgs/jazzan.jpeg"
+            />
+          </div>
+          <div class="relative flex items-center justify-between w-full p-3">
+            <div>
+              <p class="font-bold text-md">منطقة جزان</p>
+              <p class="text-[var(--color-brand-6)]">5 عقارات</p>
+            </div>
+            <img src="./src/imgs/ArrowLeft.svg" alt="" class="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="p-5 flex flex-col justify-center mx-auto items-center">
+        <p class="font-bold text-[var(--color-brand-1)]">أحدث القوائم</p>
+        <p class="font-bold text-xl">عقارات مميزة للبيع</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell1.jpg"
+              data-high="./src/imgs/sell1.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell5.jpg"
+              data-high="./src/imgs/sell5.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell4.jpg"
+              data-high="./src/imgs/sell4.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell3.jpg"
+              data-high="./src/imgs/sell3.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell2.jpg"
+              data-high="./src/imgs/sell2.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-4 items-center p-5">
+          <div class="w-[171px] h-[168px] relative rounded-xl overflow-hidden">
+            <img
+              src="./src/imgs/lazy-sell1.jpg"
+              data-high="./src/imgs/sell1.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex gap-2 flex-col">
+            <p class="font-bold text-lg text-[#2A367A]">بيت للبيع في المدينة</p>
+            <p class="flex text-[var(--color-brand-6)]">
+              <img src="./src/imgs/minilocation.svg" alt="" />
+              مخطط درب الحرمين
+            </p>
+            <p class="font-bold text-[var(--color-brand-1)]">1200 ري</p>
+            <div class="flex items-center gap-4 text-[var(--color-brand-6)]">
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/spaceOut.svg" alt="" />
+                123 متر
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/bathOut.svg" alt="" />
+                حمامان
+              </span>
+              <span class="flex items-center gap-1">
+                <img src="./src/imgs/roomOut.svg" alt="" />
+                4 غرف نوم
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="relative flex flex-col items-center justify-center px-20 py-5"
+        id=""
+      >
+        <div class="absolute w-full h-full overflow-hidden z-10">
+          <div class="absolute w-full h-full" id="filter"></div>
+          <img
+            src="./src/imgs/lazy-2bg.jpg"
+            data-high="./src/imgs/2bg.jpeg"
+            alt="Your Image"
+            class="object-cover w-full h-full filterBlur"
+          />
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4 z-[11]">
+          <img src="./src/imgs/playButton.svg" alt="" />
+          <h1 class="text-[var(--color-brand-2)] font-bold text-3xl">
+            بحث الملكية أذكى وأسرع وفي أي مكان
+          </h1>
+          <p
+            class="text-[var(--cord)] leading-[36.01px] font-[400] text-[24px] text-center"
+          >
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم <br />
+            توليد هذا النص من مولد النص العربى،
+          </p>
+          <button
+            class="bg-[var(--color-brand-1)] font-bold rounded-xl py-4 px-10 text-[var(--color-brand-2)]"
+          >
+            تواصل معانا
+          </button>
+        </div>
+      </div>
+      <div class="p-20">
+        <div class="flex flex-col justify-center items-center p-3 font-bold">
+          <p class="text-[var(--color-brand-1)]">عملاء</p>
+          <p class="text-3xl">الخبرة هنا</p>
+        </div>
+        <div
+          class="flex flex-col flex-wrap items-center md:flex-row justify-center gap-20"
+        >
+          <div>
+            <div class="relative w-64 h-64">
+              <img
+                src="./src/imgs/lazy-person1.jpg"
+                data-high="./src/imgs/person1.jpeg"
+                class="filterBlur object-cover w-full h-full person"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-2xl font-bold text-[var(--color-brand-3)]">
+                علاء عباسي
+              </h1>
+              <p class="text-[var(--color-brand-6)]">مهندس</p>
+              <div class="flex">
+                <img src="./src/imgs/phone.svg" alt="" />
+                <p class="text-[var(--color-brand-6)]">
+                  اتصل على: <span dir="ltr">+123 699 7700</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative w-64 h-64">
+              <img
+                src="./src/imgs/lazy-person2.jpg"
+                data-high="./src/imgs/person2.webp"
+                alt=""
+                class="object-cover w-full h-full person filterBlur"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-2xl font-bold text-[var(--color-brand-3)]">
+                علاء عباسي
+              </h1>
+              <p class="text-[var(--color-brand-6)]">مهندس</p>
+              <div class="flex">
+                <img src="./src/imgs/phone.svg" alt="" />
+                <p class="text-[var(--color-brand-6)]">
+                  اتصل على: <span dir="ltr">+123 699 7700</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative w-64 h-64">
+              <img
+                src="./src/imgs/lazy-person3.jpg"
+                data-high="./src/imgs/person3.jpeg"
+                alt=""
+                class="object-cover w-full h-full person filterBlur"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-2xl font-bold text-[var(--color-brand-3)]">
+                علاء عباسي
+              </h1>
+              <p class="text-[var(--color-brand-6)]">مهندس</p>
+              <div class="flex">
+                <img src="./src/imgs/phone.svg" alt="" />
+                <p class="text-[var(--color-brand-6)]">
+                  اتصل على: <span dir="ltr">+123 699 7700</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="relative w-64 h-64">
+              <img
+                src="./src/imgs/lazy-person4.jpg"
+                data-high="./src/imgs/person4.jpeg"
+                alt=""
+                class="object-cover w-full h-full person filterBlur"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h1 class="text-2xl font-bold text-[var(--color-brand-3)]">
+                علاء عباسي
+              </h1>
+              <p class="text-[var(--color-brand-6)]">مهندس</p>
+              <div class="flex">
+                <img src="./src/imgs/phone.svg" alt="" />
+                <p class="text-[var(--color-brand-6)]">
+                  اتصل على: <span dir="ltr">+123 699 7700</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#F4FBF9] lg:px-40 py-20">
+      <div class="flex flex-col items-center gap-4">
+        <p class="font-bold text-[var(--color-brand-1)]">
+          ما هو الإتجاه الجديد
+        </p>
+        <p class="font-bold text-3xl">أحدث المدونات و المشاركات</p>
+      </div>
+      <div
+        class="flex p-3 justify-center flex-col md:flex-row flex-wrap items-center gap-4 md:px-20"
+      >
+        <div class="flex-1 bg-[var(--color-brand-2)] p-3 rounded-md">
+          <div class="relative rounded-md overflow-hidden w-full h-72">
+            <img
+              src="./src/imgs/lazy-post1.jpg"
+              data-high="./src/imgs/post1.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-start gap-4" dir="">
+              <span class="text-[var(--color-brand-6)] font-bold">شقة</span>
+
+              <p
+                class="flex flex-row-reverse items-center gap-1 text-[var(--color-brand-6)]"
+              >
+                <img src="./src/imgs/clock.svg" alt="" /> 28 جوان 2024
+              </p>
+            </div>
+            <p class="text-2xl font-bold text-[#2A367A] break-word">
+              كيفية القيام بأبحاث السوق لبيع <wbr /> أسرع
+            </p>
+            <p class="text-[var(--color-brand-6)]">
+              هذا النص هو مثال لنص يمكن أن يستبدل في <wbr /> نفس المساحة، لقد تم
+              توليد هذا النص من <wbr />مولد النص
+            </p>
+            <div class="flex gap-1 items-center">
+              <p class="font-bold text-[var(--color-brand-1)]">إقرأ المزيد</p>
+              <img src="./src/imgs/read.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 bg-[var(--color-brand-2)] p-3 rounded-md">
+          <div class="relative rounded-md overflow-hidden w-full h-72">
+            <img
+              src="./src/imgs/lazy-post2.jpg"
+              data-high="./src/imgs/post2.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-start gap-4" dir="">
+              <span class="text-[var(--color-brand-6)] font-bold">شقة</span>
+
+              <p
+                class="flex flex-row-reverse items-center gap-1 text-[var(--color-brand-6)]"
+              >
+                <img src="./src/imgs/clock.svg" alt="" /> 28 جوان 2024
+              </p>
+            </div>
+            <p class="text-2xl font-bold text-[#2A367A] break-word">
+              كيفية القيام بأبحاث السوق لبيع <wbr /> أسرع
+            </p>
+            <p class="text-[var(--color-brand-6)]">
+              هذا النص هو مثال لنص يمكن أن يستبدل في <wbr /> نفس المساحة، لقد تم
+              توليد هذا النص من <wbr />مولد النص
+            </p>
+            <div class="flex gap-1 items-center">
+              <p class="font-bold text-[var(--color-brand-1)]">إقرأ المزيد</p>
+              <img src="./src/imgs/read.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 bg-[var(--color-brand-2)] p-3 rounded-md">
+          <div class="relative rounded-md overflow-hidden w-full h-72">
+            <img
+              src="./src/imgs/lazy-post3.jpg"
+              data-high="./src/imgs/post3.jpeg"
+              alt=""
+              class="object-cover w-full h-full filterBlur"
+            />
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-start gap-4" dir="">
+              <span class="text-[var(--color-brand-6)] font-bold">شقة</span>
+
+              <p
+                class="flex flex-row-reverse items-center gap-1 text-[var(--color-brand-6)]"
+              >
+                <img src="./src/imgs/clock.svg" alt="" /> 28 جوان 2024
+              </p>
+            </div>
+            <p class="text-2xl font-bold text-[#2A367A] break-word">
+              كيفية القيام بأبحاث السوق لبيع <wbr /> أسرع
+            </p>
+            <p class="text-[var(--color-brand-6)]">
+              هذا النص هو مثال لنص يمكن أن يستبدل في <wbr /> نفس المساحة، لقد تم
+              توليد هذا النص من <wbr />مولد النص
+            </p>
+            <div class="flex gap-1 items-center">
+              <p class="font-bold text-[var(--color-brand-1)]">إقرأ المزيد</p>
+              <img src="./src/imgs/read.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-[#050B2B] sm:p-0 flex flex-col text-[var(--color-brand-2)]"
+    >
+      <div
+        class="flex px-20 py-10 w-full justify-around flex-col-reverse md:flex-row gap-2"
+      >
+        <div>
+          <div class="flex items-center justify-between gap-4">
+            <!-- <div class="relative w-20 h-20 overflow-hidden"> -->
+            <img src="./src/imgs/logo.svg" alt="" class="w-20 h-20" />
+            <!-- </div> -->
+            <h1 class="text-2xl font-bold text-[var(--color-brand-2)]">
+              1. عالم العقار
+            </h1>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-center text-[var(--color-brand-6)]">
+              هذا النص هو مثال لنص يمكن أن <br />
+              يستبدل في نفس المساحة، لقد <br />
+              تم توليد هذا النص من مولد النص
+            </p>
+            <div class="flex gap-4 justify-center">
+              <img src="./src/imgs/fb.svg" alt="" />
+              <img src="./src/imgs/website.svg" alt="" />
+              <img src="./src/imgs/yt.svg" alt="" />
+              <img src="./src/imgs/wa.svg" alt="" />
+              <img src="./src/imgs/insta.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1
+            class="p-2 mb-3 font-bold border-b-2 border-[var(--color-brand-1)] text-lg"
+          >
+            روابط سريعة
+          </h1>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#">معلومات عنا</a></li>
+            <li><a href="#">الخدمات</a></li>
+            <li><a href="#">التعيين</a></li>
+            <li><a href="#">التسعير</a></li>
+            <li><a href="#">تصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <h1
+            class="p-2 mb-3 font-bold border-b-2 border-[var(--color-brand-1)] text-lg"
+          >
+            روابط مفيدة
+          </h1>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href=""> سياسة الخصوصية </a>
+            </li>
+            <li><a href="#">الشروط و الأحكام</a></li>
+            <li><a href="#">إخلاء المسؤولية</a></li>
+            <li><a href="#">الدعم</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h1
+            class="p-2 mb-3 font-bold border-b-2 border-[var(--color-brand-1)] text-lg"
+          >
+            تحديد موعد
+          </h1>
+          <p class="flex items-center gap-1">
+            <img src="./src/imgs/clock.svg" alt="" />
+            30: 08 ص-00: 18 م
+          </p>
+          <div class="flex gap-2">
+            <img src="./src/imgs/footerPhone.svg" alt="" />
+            <div>
+              <p>اتصل بنا اليوم</p>
+              <p dir="ltr">(+213)696139333</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <p>
+          Designed By
+          <a class="tajawal-bold pointer" target="_blank" href="https://www.behance.net/aymendz10"
+            >Aymen Meddour</a
+          >
+        </p>
+        <div>
+          <p>
+            Developed by
+            <a class="tajawal-bold" href="https://github.com/mehdi-abbane"
+              >Mehdi Abbane</a
+            >
+          </p>
+          <a class="tajawal-bold" href="https://wa.me/+213696139333"">Lets Discuss your Project</a>
+          <p class="tajawal-bold cursor-pointer" data-copy="+213696139333" 
+            >Click To Copy My Whatsapp Number for later</
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
